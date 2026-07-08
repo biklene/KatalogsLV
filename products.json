@@ -1,41 +1,38 @@
 [
- {
-  "id":1,
-  "name":"HemoHIM",
-  "category":"health",
-  "price":"95.00 €",
-  "pv":"42000",
-  "image":"images/hemohim.jpg",
-  "description":"Atomy HemoHIM veselības produkts."
- },
-
- {
-  "id":2,
-  "name":"Baltinošā zobu pasta",
-  "category":"beauty",
-  "price":"4.50€",
-  "pv":"38000",
-  "image":"images/toothpastewhite.JPG",
-  "description":"Premium ādas kopšanas komplekts."
- },
-
- {
-  "id":3,
-  "name":"Atomy Absolute CellActive",
-  "category":"beauty",
-  "price":"75.00 €",
-  "pv":"32000",
-  "image":"images/test.jpg",
-  "description":"Ādas kopšanas līdzeklis."
- },
-
- {
-  "id":4,
-  "name":"Atomy Living Products",
-  "category":"living",
-  "price":"25.00 €",
-  "pv":"10000",
-  "image":"images/toothpastewhite.jpg",
-  "description":"Produkti mājai."
- }
+  {
+    "id": 1,
+    "name": "HemoHIM",
+    "category": "health",
+    "price": "95.00 €",
+    "pv": "42000",
+    "image": "images/hemohim.jpg",
+    "description": "Atomy HemoHIM veselības produkts."
+  },
+  {
+    "id": 2,
+    "name": "Baltinošā zobu pasta",
+    "category": "beauty",
+    "price": "4.50€",
+    "pv": "38000",
+    "image": "images/toothpastewhite.JPG",
+    "description": "Premium ādas kopšanas komplekts."
+  },
+  {
+    "id": 3,
+    "name": "Atomy Absolute CellActive",
+    "category": "beauty",
+    "price": "75.00 €",
+    "pv": "32000",
+    "image": "images/test.jpg",
+    "description": "Ādas kopšanas līdzeklis."
+  },
+  {
+    "id": 4,
+    "name": "Atomy Living Products",
+    "category": "living",
+    "price": "25.00 €",
+    "pv": "10000",
+    "image": "images/toothpastewhite.jpg",
+    "description": "Produkti mājai."
+  }
 ]
