@@ -1,5 +1,5 @@
 [
- {
+{
   "id": 1,
   "code": "005768",
   "name": "HemoHIM",
@@ -8,13 +8,13 @@
   "pv": "42000",
   "image": "images/hemohim.jpg",
 
-  "description": " ir Dienvidkorejā izstrādāts uztura bagātinātājs, kas sastāv no augu ekstraktu maisījuma. Tas ir veidots, lai veicinātu imūnsistēmas darbību un palīdzētu organismam cīnīties ar nogurumu.",
+  "description": "HemoHIM ir Dienvidkorejā izstrādāts uztura bagātinātājs, kas sastāv no augu ekstraktu maisījuma. Tas ir veidots, lai veicinātu imūnsistēmas darbību un palīdzētu organismam cīnīties ar nogurumu.",
 
   "benefits": [
-  "Aktivizē imunitāti: Stimulē NK (Natural Killer) šūnu darbību, kas atpazīst un iznīcina kaitīgos organismus."
-  "Atjauno enerģiju: Efektīvi mazina hronisku nogurumu, fizisko un garīgo izsīkumu."
-  "Uzlabo asinsriti: Sastāvā esošie augi tradicionāli tiek izmantoti asins kvalitātes un cirkulācijas veicināšanai."
-  "Spēcīgs antioksidants: Palīdz organismam cīnīties ar ikdienas stresu un apkārtējās vides piesārņojuma ietekmi."
+    "Aktivizē imunitāti: stimulē NK (Natural Killer) šūnu darbību.",
+    "Palīdz mazināt nogurumu un atjaunot enerģiju.",
+    "Veicina normālu asinsriti.",
+    "Satur antioksidantus, kas palīdz aizsargāt šūnas."
   ],
 
   "ingredients": [
@@ -22,13 +22,16 @@
     "Briežu raga ekstrakts",
     "Peonijas saknes ekstrakts"
   ],
+
   "usage": "1 paciņa 2 reizes dienā.",
 
-  "package": "60 paciņas × 20 ml"
+  "package": "60 paciņas × 20 ml",
 
-  "target": "Strādājošiem un studentiem pie lielas garīgās un fiziskās slodzes."
-   "Senioriem vispārējā dzīves tonusa un enerģijas uzturēšanai."
-   "Cilvēkiem periodos, kad nepieciešams ātri atgūt spēkus un stiprināt veselību."
+  "target": [
+    "Strādājošiem un studentiem pie lielas garīgās un fiziskās slodzes.",
+    "Senioriem dzīves tonusa un enerģijas uzturēšanai.",
+    "Cilvēkiem periodos, kad nepieciešams atgūt spēkus."
+  ]
 },
   {
     "id": 2,
