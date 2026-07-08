@@ -18,52 +18,82 @@ header h1 {
     font-weight: 600;
 }
 
-header p {
-    color: #777;
-    font-size: 18px;
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
 }
 
-.products {
+
+main {
     max-width: 1200px;
     margin: auto;
     padding: 30px;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+#products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
 }
 
-.card {
+
+.product-card {
+
     background: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    padding-bottom: 20px;
     transition: 0.3s;
 }
 
-.card:hover {
+
+.product-card:hover {
     transform: translateY(-5px);
 }
 
-.card img {
+
+.product-card img {
+
     width: 100%;
     height: 260px;
     object-fit: contain;
-    background: #fff;
+    background: white;
+
 }
 
-.card h2 {
+
+.product-card h3 {
+
     font-size: 21px;
     padding: 0 20px;
     margin-top: 20px;
+
 }
 
-.card p {
+
+.product-card p {
+
     padding: 0 20px;
     color: #666;
     line-height: 1.5;
+
 }
 
-.card p:last-child {
-    padding-bottom: 20px;
-    font-weight: bold;
+
+.product-card strong {
+
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+
 }
