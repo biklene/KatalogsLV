@@ -1,20 +1,99 @@
-const params = new URLSearchParams(window.location.search);
+let allProducts = [];
 
-const productId = params.get("id");
 
+// Ielādē produktus no products.json
 
 fetch("products.json")
 .then(response => response.json())
-.then(products => {
+.then(data => {
+
+    allProducts = data;
+
+    displayProducts(allProducts);
+
+})
+.catch(error => {
+
+    console.error("Neizdevās ielādēt produktus:", error);
+
+});
 
 
-    const product = products.find(item => item.id == productId);
 
 
-    if (!product) {
+// Parāda produktus
 
-        document.getElementById("product-detail").innerHTML =
-        "<h2>Produkts nav atrasts</h2>";
+function displayProducts(products) {
+
+    const container = document.getElementById("products-container");
+
+
+    if (!container) {
+        console.error("Nav atrasts products-container");
+        return;
+    }
+
+
+    container.innerHTML = "";
+
+
+    products.forEach(product => {
+
+
+        container.innerHTML += `
+
+        <div class="product-card">
+
+
+            <img src="${product.image}" 
+                 alt="${product.name}">
+
+
+            <h3>
+                ${product.name}
+            </h3>
+
+
+            <p>
+                ${product.description}
+            </p>
+
+
+            <strong>
+                ${product.price}
+            </strong>
+
+
+            <br><br>
+
+
+            <a href="product.html?id=${product.id}">
+                Skatīt produktu
+            </a>
+
+
+        </div>
+
+        `;
+
+
+    });
+
+
+}
+
+
+
+
+
+// Filtrs pēc kategorijas
+
+function filterProducts(category) {
+
+
+    if (category === "all") {
+
+        displayProducts(allProducts);
 
         return;
 
@@ -22,51 +101,12 @@ fetch("products.json")
 
 
 
-    document.getElementById("product-detail").innerHTML = `
+    const filteredProducts = allProducts.filter(product => 
+        product.category === category
+    );
 
 
-        <div class="single-product">
+    displayProducts(filteredProducts);
 
 
-            <img src="${product.image}" 
-                 alt="${product.name}">
-
-
-            <div class="product-info">
-
-
-                <h1>
-                    ${product.name}
-                </h1>
-
-
-                <p>
-                    ${product.description}
-                </p>
-
-
-                <h2>
-                    ${product.price}
-                </h2>
-
-
-                <p>
-                    PV: ${product.pv || ""}
-                </p>
-
-
-            </div>
-
-
-        </div>
-
-
-    `;
-
-
-})
-.catch(error => {
-
-    console.error("Kļūda:", error);
-
-});
+}
