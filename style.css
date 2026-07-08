@@ -267,3 +267,7 @@ h2 {
     }
 
 }
+
+.product-card {
+    cursor: pointer;
+}
