@@ -42,7 +42,11 @@ fetch("products.json")
 
             <h2>${product.price}</h2>
 
-            <p>PV punkti: ${product.pv}</p>
+            <p>PV: ${product.pv}</p>
+
+            <p class="product-id">
+    ID: ${String(product.id).padStart(6, "0")}
+</p>
 
 
             <button class="order-button">
