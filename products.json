@@ -1,63 +1,129 @@
 [
-{
-  "id": 1,
-  "code": "005768",
-  "name": "HemoHIM",
-  "category": "health",
-  "price": "105.00 €",
-  "pv": "73000",
-  "image": "images/hemohim.jpg",
+  {
+    "id": 1,
+    "code": "005768",
+    "name": "HemoHIM",
+    "category": "health",
+    "price": "105.00 €",
+    "pv": "73000",
+    "image": "images/hemohim.jpg",
 
-  "description": "HemoHIM ir Dienvidkorejā izstrādāts uztura bagātinātājs, kas sastāv no augu ekstraktu maisījuma. Tas ir veidots, lai veicinātu imūnsistēmas darbību un palīdzētu organismam cīnīties ar nogurumu.",
+    "description": "HemoHIM ir Dienvidkorejā izstrādāts uztura bagātinātājs, kas sastāv no augu ekstraktu maisījuma. Tas ir veidots, lai palīdzētu uzturēt normālu imūnsistēmas darbību un mazināt nogurumu.",
 
-  "benefits": [
-    "Aktivizē imunitāti: stimulē NK (Natural Killer) šūnu darbību.",
-    "Palīdz mazināt nogurumu un atjaunot enerģiju.",
-    "Veicina normālu asinsriti.",
-    "Satur antioksidantus, kas palīdz aizsargāt šūnas."
-  ],
+    "benefits": [
+      "Palīdz uzturēt normālu imūnsistēmas darbību.",
+      "Palīdz mazināt nogurumu un atjaunot enerģiju.",
+      "Veicina vispārēju labsajūtu.",
+      "Satur rūpīgi atlasītus augu ekstraktus."
+    ],
 
-  "ingredients": [
-    "Ķīnas eņģeļsaknes ekstrakts",
-    "Briežu raga ekstrakts",
-    "Peonijas saknes ekstrakts"
-  ],
+    "ingredients": [
+      "Ķīnas eņģeļsaknes ekstrakts",
+      "Briežu raga ekstrakts",
+      "Peonijas saknes ekstrakts"
+    ],
 
-  "usage": "1 paciņa 2 reizes dienā.",
+    "usage": "1 paciņa 2 reizes dienā.",
 
-  "package": "60 paciņas × 20 ml",
+    "package": "60 paciņas × 20 ml",
 
-  "target": [
-    "Strādājošiem un studentiem pie lielas garīgās un fiziskās slodzes.",
-    "Senioriem dzīves tonusa un enerģijas uzturēšanai.",
-    "Cilvēkiem periodos, kad nepieciešams atgūt spēkus."
-  ]
-},
+    "target": [
+      "Strādājošiem un studentiem.",
+      "Senioriem.",
+      "Cilvēkiem pēc lielas fiziskas vai garīgas slodzes."
+    ]
+  },
+
   {
     "id": 2,
+    "code": "003214",
     "name": "Baltinošā zobu pasta",
     "category": "beauty",
-    "price": "4.50€",
-    "pv": "38000",
+    "price": "4.50 €",
+    "pv": "2200",
     "image": "images/toothpastewhite.JPG",
-    "description": "Premium ādas kopšanas komplekts."
+
+    "description": "Atomy baltinošā zobu pasta ikdienas mutes dobuma kopšanai.",
+
+    "benefits": [
+      "Palīdz uzturēt zobus tīrus.",
+      "Veicina svaigu elpu.",
+      "Palīdz samazināt aplikumu."
+    ],
+
+    "ingredients": [
+      "Silīcija dioksīds",
+      "Nātrija fluorīds",
+      "Piparmētru ekstrakts"
+    ],
+
+    "usage": "Tīrīt zobus 2–3 reizes dienā.",
+
+    "package": "200 g",
+
+    "target": [
+      "Pieaugušajiem.",
+      "Ikdienas mutes dobuma kopšanai."
+    ]
   },
+
   {
     "id": 3,
+    "code": "001257",
     "name": "Atomy Absolute CellActive",
     "category": "beauty",
     "price": "75.00 €",
     "pv": "32000",
     "image": "images/test.jpg",
-    "description": "Ādas kopšanas līdzeklis."
+
+    "description": "Premium ādas kopšanas līdzeklis sejas ādas kopšanai.",
+
+    "benefits": [
+      "Mitrina ādu.",
+      "Palīdz uzlabot ādas elastību.",
+      "Piešķir ādai mirdzumu."
+    ],
+
+    "ingredients": [
+      "Niacinamīds",
+      "Kolagēns",
+      "Augu ekstrakti"
+    ],
+
+    "usage": "Uzklāt uz attīrītas sejas no rīta un vakarā.",
+
+    "package": "40 ml",
+
+    "target": [
+      "Visiem ādas tipiem."
+    ]
   },
+
   {
     "id": 4,
+    "code": "007845",
     "name": "Atomy Living Products",
     "category": "living",
     "price": "25.00 €",
     "pv": "10000",
     "image": "images/toothpastewhite.jpg",
-    "description": "Produkti mājai."
+
+    "description": "Kvalitatīvi Atomy produkti mājai un ikdienai.",
+
+    "benefits": [
+      "Augsta kvalitāte.",
+      "Ikdienas lietošanai.",
+      "Ekonomiski."
+    ],
+
+    "ingredients": [],
+
+    "usage": "Lietot atbilstoši produkta instrukcijai.",
+
+    "package": "1 gab.",
+
+    "target": [
+      "Visai ģimenei."
+    ]
   }
 ]
