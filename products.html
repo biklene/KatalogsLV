@@ -2,41 +2,70 @@
 <html lang="lv">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Produkts - Atomy</title>
+<title>Atomy Produkti</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
-
 <header>
+    <h1>Atomy Katalogs LV</h1>
 
-<h1>Atomy Katalogs LV</h1>
-
-<a href="products.html">
-← Atpakaļ uz produktiem
-</a>
-
+    <nav>
+        <a href="index.html">Sākums</a>
+        <a href="products.html">Produkti</a>
+    </nav>
 </header>
 
 
+<main>
 
-<section id="product-detail">
-
-<!-- produkts ielādēsies šeit -->
-
-</section>
+<h2>Produkti</h2>
 
 
+<div class="categories">
 
-<script src="product.js"></script>
+<button onclick="filterProducts('all')">
+Visi
+</button>
+
+<button onclick="filterProducts('health')">
+Veselība
+</button>
+
+<button onclick="filterProducts('beauty')">
+Skaistums
+</button>
+
+<button onclick="filterProducts('living')">
+Mājai
+</button>
+
+<button onclick="filterProducts('food')">
+Pārtika
+</button>
+
+</div>
+
+
+
+<div id="products-container">
+
+<!-- Produkti ielādēsies šeit -->
+
+</div>
+
+
+</main>
+
+
+
+<script src="products.js"></script>
 
 
 </body>
