@@ -5,7 +5,7 @@
     "category": "health",
     "price": "95.00 €",
     "pv": "42000",
-    "image": "images/products/hemohim.jpg",
+    "image": "images/hemohim.jpg",
     "description": "Atomy HemoHIM veselības produkts."
   },
   {
@@ -14,7 +14,7 @@
     "category": "beauty",
     "price": "89.00 €",
     "pv": "38000",
-    "image": "images/products/the-fame.jpg",
+    "image": "images/thefame.jpg",
     "description": "Premium ādas kopšanas komplekts."
   },
   {
@@ -23,7 +23,7 @@
     "category": "beauty",
     "price": "75.00 €",
     "pv": "32000",
-    "image": "images/products/cellactive.jpg",
+    "image": "images/test.jpg",
     "description": "Ādas kopšanas līdzeklis."
   },
   {
@@ -32,7 +32,7 @@
     "category": "living",
     "price": "25.00 €",
     "pv": "10000",
-    "image": "images/products/living.jpg",
+    "image": "images/toothpastewhite.jpg",
     "description": "Produkti mājai."
   },
   {
@@ -41,7 +41,7 @@
     "category": "food",
     "price": "15.00 €",
     "pv": "8000",
-    "image": "images/products/food.jpg",
+    "image": "images/toothpastewhite.jpg",
     "description": "Pārtikas produkts."
   }
 ]
