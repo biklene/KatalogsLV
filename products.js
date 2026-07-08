@@ -1,77 +1,61 @@
-let allProducts = [];
+const params = new URLSearchParams(window.location.search);
 
-
-console.log("products.js darbojas");
+const productId = Number(params.get("id"));
 
 
 fetch("products.json")
 .then(response => response.json())
 .then(products => {
 
-    allProducts = products;
 
-    console.log("Produkti ielādēti:", products);
-
-    displayProducts(allProducts);
-
-});
+    const product = products.find(p => p.id === productId);
 
 
+    const container = document.getElementById("product-details");
 
-function displayProducts(products) {
 
-    const container = document.getElementById("products-container");
+    if (!product) {
 
-    if (!container) {
+        container.innerHTML = "<h2>Produkts nav atrasts</h2>";
+
         return;
     }
 
 
-    container.innerHTML = "";
+    container.innerHTML = `
+
+    <div class="single-product">
 
 
-    products.forEach(product => {
+        <img src="${product.image}" alt="${product.name}">
 
 
-        container.innerHTML += `
+        <div class="product-info">
 
-        <div class="product-card">
 
-            <img src="${product.image}" alt="${product.name}">
+            <h1>${product.name}</h1>
 
-            <h3>${product.name}</h3>
 
             <p>${product.description}</p>
 
-            <strong>${product.price}</strong>
+
+            <h2>${product.price}</h2>
+
+
+            <p>PV punkti: ${product.pv}</p>
+
+
+            <button>
+                Pasūtīt
+            </button>
+
 
         </div>
 
-        `;
+
+    </div>
+
+    `;
 
 
-    });
-
-}
-
-
-
-
-function filterProducts(category) {
-
-
-    if (category === "all") {
-
-        displayProducts(allProducts);
-
-    } else {
-
-        const filtered = allProducts.filter(product => 
-            product.category === category
-        );
-
-        displayProducts(filtered);
-
-    }
-
-}
+});
