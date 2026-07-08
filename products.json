@@ -1,12 +1,12 @@
 [
   {
-    "id": 1,
-    "name": "HemoHIM",
+    "id": 790101,
+    "name": "HemoHIM G",
     "category": "health",
-    "price": "95.00 €",
-    "pv": "42000",
+    "price": "105.00 €",
+    "pv": "73000",
     "image": "images/hemohim.jpg",
-    "description": "Atomy HemoHIM veselības produkts."
+    "description": "Atomy HemoHIM-G ir populārs Dienvidkorejas uztura bagātinātājs, kas izstrādāts Korejas Atomenerģijas pētniecības institūtā. Tas apvieno austrumu medicīnas tradīcijas un modernās tehnoloģijas. Produkts paredzēts imūnsistēmas stiprināšanai un cīņai ar nogurumu. Galvenie ieguvumi un funkcijasImunitātes atbalsts: Palīdz aktivizēt organisma dabiskās aizsargspējas.Mazina nogurumu: Zinātniskos pētījumos pierādīts, ka tas palīdz mazināt nogurumu un palielina enerģijas līmeni.Antioksidanta īpašības: Aizsargā šūnas no brīvo radikāļu (oksidatīvā stresa) kaitīgās ietekmes. ."
   },
   {
     "id": 2,
