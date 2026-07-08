@@ -5,53 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Produkti</title>
+    <title>Produkti | KatalogsLV</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
 <header>
+
     <h1>KatalogsLV</h1>
 
     <nav>
         <a href="index.html">Sākums</a>
         <a href="products.html">Produkti</a>
     </nav>
+
 </header>
+
 
 
 <main>
 
-<h2>Produkti</h2>
-<div class="categories">
+    <h2>Produkti</h2>
 
-<button onclick="filterProducts('all')">Visi</button>
 
-<button onclick="filterProducts('health')">
-Veselība
-</button>
+    <div class="categories">
 
-<button onclick="filterProducts('beauty')">
-Skaistums
-</button>
+        <button onclick="filterProducts('all')">
+            Visi
+        </button>
 
-<button onclick="filterProducts('living')">
-Mājai
-</button>
 
-<button onclick="filterProducts('food')">
-Pārtika
-</button>
+        <button onclick="filterProducts('health')">
+            Veselība
+        </button>
 
-</div>
-<div id="products-container"></div>
+
+        <button onclick="filterProducts('beauty')">
+            Skaistums
+        </button>
+
+
+        <button onclick="filterProducts('living')">
+            Mājai
+        </button>
+
+
+        <button onclick="filterProducts('food')">
+            Pārtika
+        </button>
+
+    </div>
+
+
+
+    <div id="products-container"></div>
+
 
 </main>
 
 
+
+<footer>
+
+    <p>
+        © 2026 KatalogsLV
+    </p>
+
+</footer>
+
+
+
 <script src="products.js"></script>
+
 
 </body>
 
