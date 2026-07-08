@@ -1,9 +1,9 @@
 [
   {
-    "name": "Produkta nosaukums",
-    "category": "Kategorija",
-    "image": "images/produkts.jpg",
-    "description": "Šeit ieraksti produkta aprakstu latviešu valodā",
-    "price": ""
+    "name": "Atomy Testa produkts",
+    "category": "Skaistumkopšana",
+    "image": "https://via.placeholder.com/400",
+    "description": "Šeit būs tava produkta apraksts latviešu valodā.",
+    "price": "Cena pēc pieprasījuma"
   }
 ]
