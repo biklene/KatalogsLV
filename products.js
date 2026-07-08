@@ -1,15 +1,30 @@
-const params = new URLSearchParams(window.location.search);
+let allProducts = [];
 
-const productId = Number(params.get("id"));
+console.log("products.js darbojas");
 
 
 fetch("products.json")
 .then(response => response.json())
 .then(products => {
 
-    const product = products.find(p => p.id === productId);
+    allProducts = products;
 
-    const container = document.getElementById("product-details");
+    console.log("Produkti ielādēti:", allProducts);
+
+    displayProducts(allProducts);
+
+})
+.catch(error => {
+
+    console.error("Kļūda ielādējot produktus:", error);
+
+});
+
+
+
+function displayProducts(products) {
+
+    const container = document.getElementById("products-container");
 
 
     if (!container) {
@@ -17,47 +32,69 @@ fetch("products.json")
     }
 
 
-    if (!product) {
+    container.innerHTML = "";
 
-        container.innerHTML = `
-            <h2>Produkts nav atrasts</h2>
+
+    products.forEach(product => {
+
+
+        container.innerHTML += `
+
+        <div class="product-card" onclick="openProduct(${product.id})">
+
+
+            <img src="${product.image}" alt="${product.name}">
+
+
+            <h3>${product.name}</h3>
+
+
+            <p>${product.description}</p>
+
+
+            <strong>${product.price}</strong>
+
+
+        </div>
+
         `;
+
+
+    });
+
+}
+
+
+
+
+function filterProducts(category) {
+
+
+    if (category === "all") {
+
+        displayProducts(allProducts);
 
         return;
     }
 
 
-    container.innerHTML = `
+    const filteredProducts = allProducts.filter(product => {
 
-    <div class="single-product">
+        return product.category === category;
 
-        <img src="${product.image}" alt="${product.name}">
-
-
-        <div class="product-info">
-
-            <h1>${product.name}</h1>
-
-            <p>${product.description}</p>
-
-            <h2>${product.price}</h2>
-
-            <p>PV punkti: ${product.pv}</p>
+    });
 
 
-            <button class="order-button">
-                Pasūtīt
-            </button>
+    displayProducts(filteredProducts);
 
-        </div>
 
-    </div>
+}
 
-    `;
 
-})
-.catch(error => {
 
-    console.error("Kļūda:", error);
 
-});
+function openProduct(id) {
+
+    window.location.href = "product.html?id=" + id;
+
+}
