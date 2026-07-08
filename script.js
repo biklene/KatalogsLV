@@ -1,24 +1,28 @@
 fetch("products.json")
-  .then(response => response.json())
-  .then(products => {
+.then(response => response.json())
+.then(products => {
 
-    const container = document.querySelector(".products");
+    const container = document.getElementById("featured-products");
+
 
     products.forEach(product => {
 
-      const card = document.createElement("div");
-      card.className = "card";
+        container.innerHTML += `
 
-      card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <h2>${product.name}</h2>
-        <p><b>Kategorija:</b> ${product.category}</p>
-        <p>${product.description}</p>
-        <p>${product.price}</p>
-      `;
+        <div class="product-card">
 
-      container.appendChild(card);
+            <img src="${product.image}" alt="${product.name}">
+
+            <h3>${product.name}</h3>
+
+            <p>${product.description}</p>
+
+            <strong>${product.price}</strong>
+
+        </div>
+
+        `;
 
     });
 
-  });
+});
