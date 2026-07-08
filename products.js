@@ -7,11 +7,14 @@ fetch("products.json")
 .then(response => response.json())
 .then(products => {
 
-
     const product = products.find(p => p.id === productId);
 
-
     const container = document.getElementById("product-details");
+
+
+    if (!container) {
+        return;
+    }
 
 
     if (!product) {
@@ -28,43 +31,33 @@ fetch("products.json")
 
     <div class="single-product">
 
-
         <img src="${product.image}" alt="${product.name}">
 
 
         <div class="product-info">
 
-
             <h1>${product.name}</h1>
-
 
             <p>${product.description}</p>
 
-
             <h2>${product.price}</h2>
 
-
-            <p>
-                PV punkti: ${product.pv}
-            </p>
+            <p>PV punkti: ${product.pv}</p>
 
 
             <button class="order-button">
                 Pasūtīt
             </button>
 
-
         </div>
-
 
     </div>
 
     `;
 
-
 })
 .catch(error => {
 
-    console.error("Kļūda ielādējot produktu:", error);
+    console.error("Kļūda:", error);
 
 });
