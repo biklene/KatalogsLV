@@ -10,13 +10,98 @@
 <body>
 
 <header>
-    <h1>Atomy Katalogs LV</h1>
-    <p>Produktu katalogs latviešu valodā</p>
+    <div class="logo">
+        <h1>Atomy Katalogs LV</h1>
+        <p>Produktu katalogs latviešu valodā</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Sākums</a>
+        <a href="products.html">Produkti</a>
+        <a href="#categories">Kategorijas</a>
+        <a href="#about">Par Atomy</a>
+        <a href="#contact">Kontakti</a>
+    </nav>
 </header>
 
-<section class="products">
-    <!-- Preces ielādēsies automātiski -->
+
+<section class="hero">
+    <h2>Atomy produkti</h2>
+    <p>Kvalitatīvi veselības, skaistuma un ikdienas produkti</p>
 </section>
+
+
+<section id="categories" class="categories">
+
+    <div class="category">
+        <h3>Veselība</h3>
+        <a href="products.html?cat=health">
+            Apskatīt produktus
+        </a>
+    </div>
+
+    <div class="category">
+        <h3>Skaistums</h3>
+        <a href="products.html?cat=beauty">
+            Apskatīt produktus
+        </a>
+    </div>
+
+    <div class="category">
+        <h3>Mājai</h3>
+        <a href="products.html?cat=living">
+            Apskatīt produktus
+        </a>
+    </div>
+
+    <div class="category">
+        <h3>Pārtika</h3>
+        <a href="products.html?cat=food">
+            Apskatīt produktus
+        </a>
+    </div>
+
+</section>
+
+
+<section class="featured">
+
+    <h2>Populārākie produkti</h2>
+
+    <div class="products">
+        <!-- produkti ielādēsies no products.json -->
+    </div>
+
+</section>
+
+
+<section id="about">
+
+<h2>Par Atomy</h2>
+
+<p>
+Atomy katalogs latviešu valodā.
+Šeit atradīsiet veselības, skaistuma un ikdienas produktus.
+</p>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Kontakti</h2>
+
+<p>
+Sazinieties ar mums par produktu pasūtīšanu.
+</p>
+
+</section>
+
+
+<footer>
+    <p>© Atomy Katalogs LV</p>
+</footer>
+
 
 <script src="script.js"></script>
 
