@@ -3,7 +3,7 @@ let allProducts = [];
 
 // Ielādē produktus no products.json
 
-fetch("products.json")
+fetch("/products.json")
 .then(response => response.json())
 .then(data => {
 
