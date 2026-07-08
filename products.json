@@ -1,13 +1,35 @@
 [
-  {
-    "id": 790101,
-    "name": "HemoHIM G",
-    "category": "health",
-    "price": "105.00 €",
-    "pv": "73000",
-    "image": "images/hemohim.jpg",
-    "description": "Atomy HemoHIM-G ir populārs Dienvidkorejas uztura bagātinātājs, kas izstrādāts Korejas Atomenerģijas pētniecības institūtā. Tas apvieno austrumu medicīnas tradīcijas un modernās tehnoloģijas. Produkts paredzēts imūnsistēmas stiprināšanai un cīņai ar nogurumu. Galvenie ieguvumi un funkcijasImunitātes atbalsts: Palīdz aktivizēt organisma dabiskās aizsargspējas.Mazina nogurumu: Zinātniskos pētījumos pierādīts, ka tas palīdz mazināt nogurumu un palielina enerģijas līmeni.Antioksidanta īpašības: Aizsargā šūnas no brīvo radikāļu (oksidatīvā stresa) kaitīgās ietekmes. ."
-  },
+ {
+  "id": 1,
+  "code": "005768",
+  "name": "HemoHIM",
+  "category": "health",
+  "price": "95.00 €",
+  "pv": "42000",
+  "image": "images/hemohim.jpg",
+
+  "description": " ir Dienvidkorejā izstrādāts uztura bagātinātājs, kas sastāv no augu ekstraktu maisījuma. Tas ir veidots, lai veicinātu imūnsistēmas darbību un palīdzētu organismam cīnīties ar nogurumu.",
+
+  "benefits": [
+  "Aktivizē imunitāti: Stimulē NK (Natural Killer) šūnu darbību, kas atpazīst un iznīcina kaitīgos organismus."
+  "Atjauno enerģiju: Efektīvi mazina hronisku nogurumu, fizisko un garīgo izsīkumu."
+  "Uzlabo asinsriti: Sastāvā esošie augi tradicionāli tiek izmantoti asins kvalitātes un cirkulācijas veicināšanai."
+  "Spēcīgs antioksidants: Palīdz organismam cīnīties ar ikdienas stresu un apkārtējās vides piesārņojuma ietekmi."
+  ],
+
+  "ingredients": [
+    "Ķīnas eņģeļsaknes ekstrakts",
+    "Briežu raga ekstrakts",
+    "Peonijas saknes ekstrakts"
+  ],
+  "usage": "1 paciņa 2 reizes dienā.",
+
+  "package": "60 paciņas × 20 ml"
+
+  "target": "Strādājošiem un studentiem pie lielas garīgās un fiziskās slodzes."
+   "Senioriem vispārējā dzīves tonusa un enerģijas uzturēšanai."
+   "Cilvēkiem periodos, kad nepieciešams ātri atgūt spēkus un stiprināt veselību."
+},
   {
     "id": 2,
     "name": "Baltinošā zobu pasta",
