@@ -30,17 +30,17 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
 }
 
 
+
+/* GALVENAIS SATURS */
 
 main {
     max-width: 1200px;
     margin: auto;
     padding: 30px;
 }
-
 
 
 h2 {
@@ -50,8 +50,7 @@ h2 {
 
 
 
-/* PRODUKTU KATALOGS */
-
+/* KATEGORIJU POGAS */
 
 .categories {
     text-align: center;
@@ -77,6 +76,8 @@ h2 {
 
 
 
+/* PRODUKTU KATALOGS */
+
 #products-container {
 
     display: grid;
@@ -84,7 +85,6 @@ h2 {
     gap: 25px;
 
 }
-
 
 
 .product-card {
@@ -95,6 +95,7 @@ h2 {
     padding-bottom: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     transition: 0.3s;
+    cursor: pointer;
 
 }
 
@@ -149,7 +150,6 @@ h2 {
 
 
 /* VIENA PRODUKTA LAPA */
-
 
 .single-product {
 
@@ -215,6 +215,20 @@ h2 {
 
 
 
+/* PRODUKTA ID */
+
+.product-id {
+
+    font-size: 14px !important;
+    color: #999 !important;
+    margin-top: 15px;
+
+}
+
+
+
+/* PASŪTĪT POGA */
+
 .order-button {
 
     background: #222;
@@ -228,7 +242,6 @@ h2 {
 }
 
 
-
 .order-button:hover {
 
     opacity: 0.8;
@@ -237,8 +250,19 @@ h2 {
 
 
 
-/* TELEFONS */
+/* KĀJENE */
 
+footer {
+
+    text-align: center;
+    padding: 30px;
+    color: #777;
+
+}
+
+
+
+/* TELEFONS */
 
 @media (max-width: 768px) {
 
@@ -266,14 +290,4 @@ h2 {
 
     }
 
-}
-
-.product-card {
-    cursor: pointer;
-}
-
-.product-id {
-    font-size: 14px;
-    color: #999;
-    margin-top: 15px;
 }
