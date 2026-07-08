@@ -4,23 +4,44 @@
     "name": "HemoHIM",
     "category": "health",
     "price": "95.00 €",
+    "pv": "42000",
     "image": "images/products/hemohim.jpg",
-    "description": "Veselības produkts ikdienas labsajūtai"
+    "description": "Atomy HemoHIM veselības produkts."
   },
   {
     "id": 2,
-    "name": "The Fame",
+    "name": "Atomy The Fame",
     "category": "beauty",
     "price": "89.00 €",
-    "image": "images/products/thefame.jpg",
-    "description": "Ādas kopšanas komplekts"
+    "pv": "38000",
+    "image": "images/products/the-fame.jpg",
+    "description": "Premium ādas kopšanas komplekts."
   },
   {
     "id": 3,
-    "name": "Zobu pasta",
+    "name": "Atomy Absolute CellActive",
+    "category": "beauty",
+    "price": "75.00 €",
+    "pv": "32000",
+    "image": "images/products/cellactive.jpg",
+    "description": "Ādas kopšanas līdzeklis."
+  },
+  {
+    "id": 4,
+    "name": "Atomy Living Products",
     "category": "living",
-    "price": "5.50 €",
-    "image": "images/products/toothpastewhite.jpg",
-    "description": "Ikdienas mutes kopšanai"
+    "price": "25.00 €",
+    "pv": "10000",
+    "image": "images/products/living.jpg",
+    "description": "Produkti mājai."
+  },
+  {
+    "id": 5,
+    "name": "Atomy Food",
+    "category": "food",
+    "price": "15.00 €",
+    "pv": "8000",
+    "image": "images/products/food.jpg",
+    "description": "Pārtikas produkts."
   }
 ]
