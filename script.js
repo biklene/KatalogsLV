@@ -2,8 +2,12 @@ fetch("products.json")
 .then(response => response.json())
 .then(products => {
 
-    const container = document.getElementById("featured-products");
+    const container = document.getElementById("products-container");
 
+    // Ja šajā lapā nav produktu konteinera, neko nedarām
+    if (!container) {
+        return;
+    }
 
     products.forEach(product => {
 
@@ -25,4 +29,7 @@ fetch("products.json")
 
     });
 
+})
+.catch(error => {
+    console.error("Kļūda ielādējot produktus:", error);
 });
