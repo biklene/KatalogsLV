@@ -16,7 +16,9 @@ fetch("products.json")
 
     if (!product) {
 
-        container.innerHTML = "<h2>Produkts nav atrasts</h2>";
+        container.innerHTML = `
+            <h2>Produkts nav atrasts</h2>
+        `;
 
         return;
     }
@@ -42,10 +44,12 @@ fetch("products.json")
             <h2>${product.price}</h2>
 
 
-            <p>PV punkti: ${product.pv}</p>
+            <p>
+                PV punkti: ${product.pv}
+            </p>
 
 
-            <button>
+            <button class="order-button">
                 Pasūtīt
             </button>
 
@@ -57,5 +61,10 @@ fetch("products.json")
 
     `;
 
+
+})
+.catch(error => {
+
+    console.error("Kļūda ielādējot produktu:", error);
 
 });
