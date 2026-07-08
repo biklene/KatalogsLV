@@ -1,9 +1,26 @@
 [
   {
-    "name": "Atomy Testa produkts",
-    "category": "Skaistumkopšana",
-    "image": "images/hemohim.jpg",
-    "description": "Šeit būs tava produkta apraksts latviešu valodā.",
-    "price": "Cena pēc pieprasījuma"
+    "id": 1,
+    "name": "HemoHIM",
+    "category": "health",
+    "price": "95.00 €",
+    "image": "images/products/hemoHIM.jpg",
+    "description": "Veselības produkts ikdienas labsajūtai"
+  },
+  {
+    "id": 2,
+    "name": "The Fame",
+    "category": "beauty",
+    "price": "89.00 €",
+    "image": "images/products/thefame.jpg",
+    "description": "Ādas kopšanas komplekts"
+  },
+  {
+    "id": 3,
+    "name": "Zobu pasta",
+    "category": "living",
+    "price": "5.50 €",
+    "image": "images/products/toothpaste.jpg",
+    "description": "Ikdienas mutes kopšanai"
   }
 ]
