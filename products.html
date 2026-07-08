@@ -2,62 +2,54 @@
 <html lang="lv">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Atomy Produkti</title>
+    <title>Produkti | KatalogsLV</title>
 
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Atomy Katalogs LV</h1>
+    <header>
+        <h1>KatalogsLV</h1>
 
-    <nav>
-        <a href="index.html">Sākums</a>
-        <a href="products.html">Produkti</a>
-    </nav>
-</header>
-
-
-<main>
-
-<h2>Produkti</h2>
+        <nav>
+            <a href="index.html">Sākums</a>
+            <a href="products.html">Produkti</a>
+        </nav>
+    </header>
 
 
-<div class="categories">
+    <main>
 
-<button onclick="filterProducts('all')">
-Visi
-</button>
-
-<button onclick="filterProducts('health')">
-Veselība
-</button>
-
-<button onclick="filterProducts('beauty')">
-Skaistums
-</button>
-
-<button onclick="filterProducts('living')">
-Mājai
-</button>
-
-<button onclick="filterProducts('food')">
-Pārtika
-</button>
-
-</div>
+        <h2>Produkti</h2>
 
 
+        <div class="categories">
 
-<div id="products-container"></div>
+            <button onclick="filterProducts('all')">Visi</button>
+            <button onclick="filterProducts('health')">Veselība</button>
+            <button onclick="filterProducts('beauty')">Skaistums</button>
+            <button onclick="filterProducts('living')">Mājai</button>
+            <button onclick="filterProducts('food')">Pārtika</button>
+
+        </div>
 
 
-<script src="products.js"></script>
+        <div id="products-container"></div>
+
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 KatalogsLV</p>
+    </footer>
+
+
+    <script src="products.js"></script>
 
 </body>
 
