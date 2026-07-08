@@ -271,3 +271,9 @@ h2 {
 .product-card {
     cursor: pointer;
 }
+
+.product-id {
+    font-size: 14px;
+    color: #999;
+    margin-top: 15px;
+}
