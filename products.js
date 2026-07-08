@@ -1,71 +1,72 @@
-let allProducts = [];
+const params = new URLSearchParams(window.location.search);
 
-fetch("./products.json")
+const productId = params.get("id");
+
+
+fetch("products.json")
 .then(response => response.json())
-.then(data => {
+.then(products => {
 
-    allProducts = data;
 
-    displayProducts(allProducts);
+    const product = products.find(item => item.id == productId);
+
+
+    if (!product) {
+
+        document.getElementById("product-detail").innerHTML =
+        "<h2>Produkts nav atrasts</h2>";
+
+        return;
+
+    }
+
+
+
+    document.getElementById("product-detail").innerHTML = `
+
+
+        <div class="single-product">
+
+
+            <img src="${product.image}" 
+                 alt="${product.name}">
+
+
+            <div class="product-info">
+
+
+                <h1>
+                    ${product.name}
+                </h1>
+
+
+                <p>
+                    ${product.description}
+                </p>
+
+
+                <h2>
+                    ${product.price}
+                </h2>
+
+
+                <p>
+                    PV: ${product.pv || ""}
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    `;
+
 
 })
 .catch(error => {
-    console.log(error);
-});
 
-
-function displayProducts(products){
-
-const container = document.getElementById("products-container");
-
-container.innerHTML="";
-
-
-products.forEach(product=>{
-
-
-container.innerHTML += `
-
-<div class="product-card">
-
-<img src="${product.image}" 
-alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p>${product.description}</p>
-
-<b>${product.price}</b>
-
-</div>
-
-`;
+    console.error("Kļūda:", error);
 
 });
-
-
-}
-
-
-
-function filterProducts(category){
-
-
-if(category=="all"){
-
-displayProducts(allProducts);
-
-return;
-
-}
-
-
-let result = allProducts.filter(product =>
-product.category == category
-);
-
-
-displayProducts(result);
-
-
-}
