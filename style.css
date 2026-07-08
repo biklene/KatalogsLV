@@ -5,6 +5,7 @@ body {
     color: #333;
 }
 
+
 header {
     background: white;
     padding: 40px 20px;
@@ -12,17 +13,26 @@ header {
     border-bottom: 1px solid #eee;
 }
 
+
 header h1 {
     margin: 0;
     font-size: 36px;
     font-weight: 600;
 }
 
+
+nav {
+    margin-top: 15px;
+}
+
+
 nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
+    font-size: 16px;
 }
+
 
 
 main {
@@ -32,18 +42,49 @@ main {
 }
 
 
+
 h2 {
     text-align: center;
     font-size: 32px;
+}
+
+
+
+/* PRODUKTU KATALOGS */
+
+
+.categories {
+    text-align: center;
     margin-bottom: 30px;
 }
 
 
+.categories button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.categories button:hover {
+    background: #222;
+    color: white;
+}
+
+
+
 #products-container {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
+
 }
+
 
 
 .product-card {
@@ -51,15 +92,19 @@ h2 {
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     padding-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     transition: 0.3s;
+
 }
 
 
 .product-card:hover {
+
     transform: translateY(-5px);
+
 }
+
 
 
 .product-card img {
@@ -72,6 +117,7 @@ h2 {
 }
 
 
+
 .product-card h3 {
 
     font-size: 21px;
@@ -79,6 +125,7 @@ h2 {
     margin-top: 20px;
 
 }
+
 
 
 .product-card p {
@@ -90,6 +137,7 @@ h2 {
 }
 
 
+
 .product-card strong {
 
     display: block;
@@ -98,7 +146,13 @@ h2 {
 
 }
 
+
+
+/* VIENA PRODUKTA LAPA */
+
+
 .single-product {
+
     max-width: 1000px;
     margin: 50px auto;
     display: flex;
@@ -108,43 +162,61 @@ h2 {
     padding: 40px;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
 }
 
 
+
 .single-product img {
+
     width: 400px;
     height: 400px;
     object-fit: contain;
     border-radius: 20px;
-    background: white;
+
 }
+
 
 
 .product-info {
+
     flex: 1;
+
 }
+
 
 
 .product-info h1 {
+
     font-size: 36px;
     margin-bottom: 20px;
+
 }
+
 
 
 .product-info p {
+
     font-size: 18px;
     color: #666;
     line-height: 1.6;
+
 }
+
 
 
 .product-info h2 {
+
+    text-align: left;
     font-size: 30px;
     margin: 20px 0;
+
 }
 
 
+
 .order-button {
+
     background: #222;
     color: white;
     border: none;
@@ -152,26 +224,46 @@ h2 {
     border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
+
 }
+
 
 
 .order-button:hover {
+
     opacity: 0.8;
+
 }
+
+
+
+/* TELEFONS */
 
 
 @media (max-width: 768px) {
 
+
     .single-product {
+
         flex-direction: column;
         margin: 20px;
         padding: 25px;
+
     }
 
 
     .single-product img {
+
         width: 100%;
         height: auto;
+
+    }
+
+
+    .product-info h1 {
+
+        font-size: 28px;
+
     }
 
 }
